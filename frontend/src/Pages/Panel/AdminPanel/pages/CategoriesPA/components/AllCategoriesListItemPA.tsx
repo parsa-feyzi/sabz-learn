@@ -1,0 +1,43 @@
+import ModeOutlinedIcon from "@mui/icons-material/ModeOutlined";
+import DeleteOutlineRoundedIcon from "@mui/icons-material/DeleteOutlineRounded";
+import type { T_CategoriesData } from "../../../../../../Types/type";
+
+type T_AllCategoriesListItemPA = { category: T_CategoriesData; index: number, editCategory: (category: T_CategoriesData) => void; deleteCategory: (category: T_CategoriesData) => void; id: number };
+
+function AllCategoriesListItemPA({ category, index, editCategory, deleteCategory, id }: T_AllCategoriesListItemPA) {
+  return (
+    <div
+      className={`${
+        index % 2
+          ? ""
+          : "rounded-lg bg-neut-seco-panel dark:bg-d-neut-seco-panel"
+      } items-center grid grid-cols-12 py-4 rounded-md me-2 *:shrink-0`}
+    >
+      <div className="w-auto md:text-base text-sm col-span-1 text-center">
+        <span className="font-[irsans] font-bold opacity-50 text-label xs:text-caption">
+          {id + 1}
+        </span>
+      </div>
+      <div className="w-auto sm:text-base text-sm col-span-4 text-center flex items-center justify-center gap-x-1.5">
+        <span className="text-label xs:text-caption">{category.title}</span>
+      </div>
+      <div className="w-auto sm:text-base text-sm col-span-1 text-center flex items-center justify-center gap-x-1.5">
+        <span className="text-label xs:text-caption">{category.name}</span>
+      </div>
+      <div className="w-auto text-sm col-span-6 text-center me-10">
+        <div className="w-auto text-label text-center px-2 py-0.5 mx-auto bg-brand-90/10 text-brand-darker rounded-md">
+          <div className="flex sm:gap-4 gap-3 justify-end">
+            <div onClick={() => editCategory(category)} className="btn btn-sm btn-neut !text-notf">
+              <ModeOutlinedIcon fontSize="small" />
+            </div>
+            <div onClick={() => deleteCategory(category)} className="btn btn-sm btn-neut !text-rose-500">
+              <DeleteOutlineRoundedIcon fontSize="small" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default AllCategoriesListItemPA;

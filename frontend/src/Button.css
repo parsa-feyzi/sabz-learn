@@ -1,0 +1,37 @@
+.btn {
+    @apply opacity-100 rounded-lg px-4 shadow py-2 hover:opacity-95 cursor-pointer active:scale-95 grid place-content-center
+}
+
+.btn-sm {
+    @apply sm:size-10 size-8 rounded-lg
+}
+
+.btn-neut {
+    @apply  bg-neut-ther-panel dark:bg-d-neut-ther-panel text-gray-600 dark:text-gray-400
+}
+
+.btn-session {
+    @apply cursor-pointer active:scale-95 grid place-content-center text-sm py-3 lg:px-7 px-6 rounded-md font-[dana-xl] bg-neut-seco dark:bg-d-neut-ther text-neut-prim
+}
+
+/* status buttons */
+.status-btn {
+   @apply text-center px-3 py-1.5 translate-y-1.5 font-[dana-xl] rounded-md
+}
+
+.warn-btn {
+    @apply status-btn bg-yellow-500/15 text-yellow-700 dark:bg-yellow-700/15 dark:text-yellow-500/80
+}
+
+.suc-btn {
+    @apply status-btn bg-green-500/15 text-green-700 dark:bg-green-700/15 dark:text-green-500/80
+}
+
+/* borders */
+.lbb {
+    @apply border-b border-b-neutral-200 dark:border-b-white/10
+}
+
+.lbt {
+    @apply border-t border-t-neutral-200 dark:border-t-white/10
+}
