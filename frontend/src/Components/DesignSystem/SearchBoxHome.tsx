@@ -20,13 +20,15 @@ function SearchBoxHome() {
   const navigate = useNavigate();
 
   const getSearchResulveHandler = async () => {
-    try {
-      const resulve = await (
-        await fetch(`http://localhost:4000/v1/search/${searchValue}`)
-      ).json();
-      setSearchResulve(resulve);
-    } catch (error) {
-      throw new Error(`${error}`);
+    if (searchValue.trim()) {
+      try {
+        const resulve = await (
+          await fetch(`http://localhost:4000/v1/search/${searchValue}`)
+        ).json();
+        setSearchResulve(resulve);
+      } catch (error) {
+        throw new Error(`${error}`);
+      }
     }
   };
 
@@ -72,9 +74,7 @@ function SearchBoxHome() {
                           to={`/course-info/${course.shortName}`}
                           className="flex gap-6 sm:p-3 p-2 justify-between items-center content-center hover:text-notf-seco"
                         >
-                          <div className="font-[dana-xl]">
-                            {course.name}
-                          </div>
+                          <div className="font-[dana-xl]">{course.name}</div>
                           <div>
                             <ArrowBackIosRoundedIcon fontSize="small" />
                           </div>

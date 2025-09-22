@@ -6,7 +6,6 @@ import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 import LockOutlineRoundedIcon from "@mui/icons-material/LockOutlineRounded";
 import SwitchAccountOutlinedIcon from "@mui/icons-material/SwitchAccountOutlined";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
-import { errorMessagesContext } from "../../../App";
 import type {
   I_AuthInfos,
   I_errorMessagesContext,
@@ -30,6 +29,7 @@ import {
   fullNameValidator,
   telValidator,
 } from "../../../Founctions/Validation";
+import { errorMessagesContext } from "../../../context/AppContext";
 
 function RegisterForm({ isAdminRegister }: { isAdminRegister?: boolean }) {
   const authInfos = useSelector((state: { authInfos: { values: I_AuthInfos } }) => state.authInfos.values);

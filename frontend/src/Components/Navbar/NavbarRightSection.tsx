@@ -16,10 +16,14 @@ import { Link } from "react-router";
 import Button from "../DesignSystem/Button";
 import type { I_AuthInfos } from "../../Types/interface";
 import type { T_SingleCourseData } from "../../Types/type";
+import { useEffect, useState } from "react";
+import { CircularProgress } from "@mui/material";
 
-type T_NavbarRightSection = { isNavhome?: boolean; isNavCourse?: boolean }
+type T_NavbarRightSection = { isNavhome?: boolean; isNavCourse?: boolean };
 
 function NavbarRightSection({ isNavhome, isNavCourse }: T_NavbarRightSection) {
+  const [isPending, setIsPending] = useState(true)
+
   const authInfos = useSelector(
     (state: { authInfos: { values: I_AuthInfos } }) => state.authInfos.values
   );
@@ -46,6 +50,12 @@ function NavbarRightSection({ isNavhome, isNavCourse }: T_NavbarRightSection) {
   );
 
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsPending(false)
+    }, 500)
+  }, []);
 
   return (
     <div
@@ -111,7 +121,11 @@ function NavbarRightSection({ isNavhome, isNavCourse }: T_NavbarRightSection) {
                   ? "border-neut-seco dark:border-d-neut-ther"
                   : "border-neut-prim dark:border-d-neut-prim")
               }
-              ${isNavhome ? "size-2 bg-green-600 -top-1 -right-1" : "border-2 size-5 -top-1 -right-1 dark:bg-prim bg-green-600"}
+              ${
+                isNavhome
+                  ? "size-2 bg-green-600 -top-1 -right-1"
+                  : "border-2 size-5 -top-1 -right-1 dark:bg-prim bg-green-600"
+              }
               text-[10px] text-center rounded-full grid place-content-center absolute text-white`}
             >
               <div className="font-[irsans] translate-y-[1px]">
@@ -122,37 +136,45 @@ function NavbarRightSection({ isNavhome, isNavCourse }: T_NavbarRightSection) {
         </div>
         {isShowCartModal && <CartModal cartItems={cartItems} />}
       </div>
-      {authInfos.isLogin ? (
-        <div
-          className={`${
-            isShowProfileModal ? "z-10" : ""
-          } relative pt-0.5 md:block hidden`}
-        >
-          <div
-            onClick={() => dispatch(showProfileModalTagle())}
-            className={`${
-              isNavhome
-                ? ""
-                : "size-[3.25rem] bg-neut-seco dark:bg-d-neut-ther grid place-content-center rounded-full"
-            } cursor-pointer`}
-          >
-            <PersonOutlineRoundedIcon />
-          </div>
-          {isShowProfileModal && <ProfileModal />}
-        </div>
-      ) : (
-        <Link to={"/login"} className=" md:block hidden">
-          <Button
-            styles={`${
-              isNavhome ? "" : "!bg-notf hover:opacity-80"
-            } md:!py-3 !px-5 !flex lg:!text-base !text-xs`}
-          >
-            <div className="lg:block hidden">
-              <PersonOutlineRoundedIcon />
+      {!isNavhome || !isPending ? (
+        <>
+          {authInfos.isLogin ? (
+            <div
+              className={`${
+                isShowProfileModal ? "z-10" : ""
+              } relative pt-0.5 md:block hidden`}
+            >
+              <div
+                onClick={() => dispatch(showProfileModalTagle())}
+                className={`${
+                  isNavhome
+                    ? ""
+                    : "size-[3.25rem] bg-neut-seco dark:bg-d-neut-ther grid place-content-center rounded-full"
+                } cursor-pointer`}
+              >
+                <PersonOutlineRoundedIcon />
+              </div>
+              {isShowProfileModal && <ProfileModal />}
             </div>
-            <div>ورود|عضویت</div>
-          </Button>
-        </Link>
+          ) : (
+            <Link to={"/login"} className=" md:block hidden">
+              <Button
+                styles={`${
+                  isNavhome ? "" : "!bg-notf hover:opacity-80"
+                } md:!py-3 !px-5 !flex lg:!text-base !text-xs`}
+              >
+                <div className="lg:block hidden">
+                  <PersonOutlineRoundedIcon />
+                </div>
+                <div>ورود|عضویت</div>
+              </Button>
+            </Link>
+          )}
+        </>
+      ) : (
+        <div className="grid place-content-center">
+          <CircularProgress color="success" size="20px" />
+        </div>
       )}
       {isShowCartModal && (
         <CoverPage closeHandler={() => dispatch(showCartModalTagle())} />

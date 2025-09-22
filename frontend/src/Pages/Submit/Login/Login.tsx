@@ -9,7 +9,7 @@ import type {
   I_AuthInfos,
   I_errorMessagesContext,
 } from "../../../Types/interface";
-import { errorMessagesContext } from "../../../App";
+
 import {
   passwordValidator,
   userNameValidator,
@@ -25,6 +25,7 @@ import type {
 import useAlertShow from "../../../Hooks/useAlertShow";
 import { useSelector } from "react-redux";
 import Alert from "../../../Components/Alert/Alert";
+import { errorMessagesContext } from "../../../context/AppContext";
 
 function Login() {
   const [inputValues, setInputValues] = useState<T_FormValues>({

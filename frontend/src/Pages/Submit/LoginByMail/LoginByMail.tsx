@@ -16,7 +16,7 @@ import type {
   I_AuthInfos,
   I_errorMessagesContext,
 } from "../../../Types/interface";
-import { errorMessagesContext } from "../../../App";
+
 import {
   emailValidator,
   passwordValidator,
@@ -25,6 +25,7 @@ import { useNavigate } from "react-router";
 import { useSelector } from "react-redux";
 import useAlertShow from "../../../Hooks/useAlertShow";
 import Alert from "../../../Components/Alert/Alert";
+import { errorMessagesContext } from "../../../context/AppContext";
 
 function LoginByMail() {
   const [inputValues, setInputValues] = useState<T_FormValues>({
