@@ -13,7 +13,6 @@ import type {
   I_AuthInfos,
   I_errorMessagesContext,
 } from "../../Types/interface";
-import { errorMessagesContext } from "../../App";
 import SwitchAccountOutlinedIcon from "@mui/icons-material/SwitchAccountOutlined";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
@@ -27,6 +26,7 @@ import useAlertShow from "../../Hooks/useAlertShow";
 import Alert from "../../Components/Alert/Alert";
 import FormTextarea from "../Submit/components/FormTextarea/FormTextarea";
 import { useSelector } from "react-redux";
+import { errorMessagesContext } from "../../context/AppContext";
 
 function Contact() {
   const authInfos = useSelector(

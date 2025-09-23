@@ -9,9 +9,10 @@ import type {
   T_setFormValues,
 } from "../../../Types/type";
 import type { I_errorMessagesContext } from "../../../Types/interface";
-import { errorMessagesContext } from "../../../App";
+
 import { telValidator } from "../../../Founctions/Validation";
 import { useNavigate } from "react-router";
+import { errorMessagesContext } from "../../../context/AppContext";
 
 function ForgetPass() {
   const [inputValues, setInputValues] = useState<T_FormValues>({ tel: "" });
