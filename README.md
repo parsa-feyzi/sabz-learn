@@ -1,6 +1,6 @@
-# sabz-learn
+# B-Learn
 
-The SabzLearn project is an educational site that includes features such as a shopping cart, user panel, administration panel, and search and filter for training courses, etc. This project is developed as a SPA and has very high performance and speed.
+The B-Learn project is an educational site that includes features such as a shopping cart, user panel, administration panel, and search and filter for training courses, etc. This project is developed as a SPA and has very high performance and speed.
 
 ### User features
 + Register for training courses
