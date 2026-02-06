@@ -94,9 +94,9 @@ https://github.com/parsa-feyzi/b-learn
 
 ---
 
-## 👨‍💻 Author
+## ✍ Author
 
 **Parsa Feyzi**  
 Front-End Developer  
-- LinkedIn: https://www.linkedin.com/in/parsa-feyzi  
+- LinkedIn: https://www.linkedin.com/in/parsa-feyzi-21606839a/ 
 - Email: fydyparsa40@gmail.com
