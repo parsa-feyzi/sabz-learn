@@ -15,6 +15,8 @@ The project focuses on **scalability, clean architecture, type safety, and perfo
 - Admin dashboard for managing courses and content
 - Responsive and accessible UI for all screen sizes
 
+![public/img/demo_images/Screenshot%20(176).png](https://github.com/parsa-feyzi/b-learn/blob/main/public/img/demo_images/Screenshot%20(176).png)
+
 ---
 
 ## 🛠 Tech Stack
