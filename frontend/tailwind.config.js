@@ -13,8 +13,8 @@ export default {
         'neut-seco': '#f3f4f6',
         // dark mode
         'd-neut-prim': '#1f2a38',
-        'd-neut-seco': '#0e1827',
-        'd-neut-ther': '#303c4c',
+        'd-neut-seco': '#0e101f',
+        'd-neut-ther': '#2a3a4a',
         // static colors | prim=#00b663
         'prim': '#008de5',
         'notf': '#f59e0b',
