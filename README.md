@@ -1,16 +1,104 @@
-# sabz-learn
+# B-Learn 🎓  
+### Educational Web Platform
 
-The SabzLearn project is an educational site that includes features such as a shopping cart, user panel, administration panel, and search and filter for training courses, etc. This project is developed as a SPA and has very high performance and speed.
+B-Learn is a **modern educational web platform** designed to simulate a real-world learning system with user and admin workflows.  
+The project focuses on **scalability, clean architecture, type safety, and performance**, built using modern front-end technologies.
 
-### User features
-+ Register for training courses
-+ Register a comment for each course
-+ Search and filter courses
-+ Send a ticket to admins, etc.
+---
 
-### Admin features
-+ Add a training course
-+ Article publication
-+ Respond to user comments
-+ Respond to user tickets
-+ Change the access level of each user, etc.
+## 🚀 Features
+
+- User authentication (register / login)
+- Protected routes and role-based access (User / Admin)
+- Course listing, filtering, and detailed pages
+- User comments and interactions
+- Admin dashboard for managing courses and content
+- Responsive and accessible UI for all screen sizes
+
+![public/img/demo_images/Screenshot%20(176).png](https://github.com/parsa-feyzi/b-learn/blob/main/public/img/demo_images/Screenshot%20(176).png)
+
+---
+
+## 🛠 Tech Stack
+
+### Front-End
+- **React.js**
+- **Next.js**
+- **TypeScript**
+- **Redux Toolkit** (Global State Management)
+- **Tailwind CSS**
+
+### Backend (API Integration)
+- **Node.js**
+- **Express.js**
+- **MongoDB**
+- RESTful APIs
+
+---
+
+## 🧱 Architecture & Practices
+
+- Component-based and modular architecture
+- Global state management with Redux Toolkit
+- Clean separation of concerns
+- Type-safe data flow using TypeScript
+- Reusable UI components
+- Responsive design with mobile-first approach
+- Performance-oriented rendering and state updates
+
+---
+
+## 🔐 Authentication & Authorization
+
+- JWT-based authentication
+- Protected routes for authenticated users
+- Role-based access control for admin features
+- Secure API communication between frontend and backend
+
+---
+
+## 📈 Performance & Code Quality
+
+- Optimized rendering patterns
+- Predictable state updates
+- Readable and maintainable code structure
+- Scalable foundation for future feature expansion
+
+---
+
+## 📂 Project Structure (Simplified)
+```
+src/
+├── components/ # Reusable UI components
+├── pages/ # Application routes
+├── store/ # Redux Toolkit slices & store
+├── services/ # API integration logic
+├── styles/ # Global and Tailwind styles
+└── utils/ # Helper functions
+```
+
+
+---
+
+## 🧪 Future Improvements
+
+- Add unit and component tests (Jest / RTL)
+- Improve accessibility (ARIA enhancements)
+- Add pagination and advanced filtering
+- Deploy live demo (Vercel / Netlify)
+
+---
+
+## 📎 Repository
+
+🔗 **GitHub:**  
+https://github.com/parsa-feyzi/b-learn
+
+---
+
+## ✍ Author
+
+**Parsa Feyzi**  
+Front-End Developer  
+- LinkedIn: https://www.linkedin.com/in/parsa-feyzi-21606839a/ 
+- Email: fydyparsa40@gmail.com
