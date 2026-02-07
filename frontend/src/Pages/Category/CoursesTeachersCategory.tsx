@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router";
 import Navbar from "../../Components/Navbar/Navbar";
 import CategoryContent from "./components/CategoryContent";
 import { useEffect, useState } from "react";
-import ChatButton from "../../Components/DesignSystem/ChatButton";
+  
 import Footer from "../../Components/Footer/Footer";
 import Topbar from "../../Components/Topbar/Topbar";
 import type { T_CoursesData } from "../../Types/type";
@@ -160,7 +160,7 @@ function CoursesTeachersCategory() {
             </div>
           </div>
           <Footer />
-          <ChatButton />
+           
         </>
       ) : (
         <Loading />

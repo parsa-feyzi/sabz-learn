@@ -76,8 +76,8 @@ function Sidebar() {
               دسترسی سریع
             </div>
             <div>
-              <LinkArrow label="دوره های من" href="/my-courses" hasArrow />
-              <LinkArrow label="تیکت های من" href="/my-ticket" hasArrow />
+              <LinkArrow label="دوره های من" href="/my-panel/courses" hasArrow />
+              <LinkArrow label="تیکت های من" href="/my-panel/tickets" hasArrow />
             </div>
           </div>
           <div className="border-b-2 border-neut-seco py-3 dark:border-d-neut-prim">

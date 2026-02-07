@@ -61,24 +61,24 @@ function Footer() {
                 <div>
                   <MailOutlineRoundedIcon fontSize="small" />
                 </div>
-                <div>info@sabzlearn.ir</div>
+                <div>info@Blearn.ir</div>
               </a>
               <a className="hover:text-notf flex gap-2 items-center content-center">
                 <div>
                   <TelegramIcon fontSize="small" />
                 </div>
-                <div>sabzlearn_support@</div>
+                <div>Blearn_support@</div>
               </a>
             </div>
           </div>
           <div className="py-9 flex sm:text-base text-sm flex-wrap gap-x-6 gap-y-10  justify-between">
             <div>
               <div className="sm:text-2xl text-lg pb-5 font-bold text-d-neut-seco dark:text-neut-prim">
-                درباره سبزلرن
+                درباره بــی‌لـرن
               </div>
               <div className="-translate-x-2 max-w-[25rem] leading-7">
                 شروع هرچیزی سخته، ولی وقتی مسیر درستی رو انتخاب کنی،با خیال راحت و
-                بدون استرس میتونی از مسیر لذت ببری. ما در سبزلرن، توی سفر به دنیای
+                بدون استرس میتونی از مسیر لذت ببری. ما در بــی‌لـرن، توی سفر به دنیای
                 برنامه نویسی کنارت هستیم تا باهم رشد کنیم و از نتیجه زحمات مون لذت
                 ببریم.
               </div>
@@ -112,7 +112,7 @@ function Footer() {
             </a>
           </div>
           <div className="flex sm:flex-row flex-col sm:justify-between gap-4 py-4">
-            <div className="text-center">کلیه حقوق مادی و معنوی سایت برای سبزلرن محفوظ است.</div>
+            <div className="text-center">کلیه حقوق مادی و معنوی سایت برای بــی‌لـرن محفوظ است.</div>
             <div className="text-center">
               توسعه داده شده توسط <span className="text-prim">پارسا فیضی :)</span>
             </div>

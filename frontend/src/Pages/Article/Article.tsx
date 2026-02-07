@@ -8,7 +8,7 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import ShareBoxToggle from "../../Components/ShareBoxToggle/ShareBoxToggle";
 import Topbar from "../../Components/Topbar/Topbar";
-import ChatButton from "../../Components/DesignSystem/ChatButton";
+  
 import Footer from "../../Components/Footer/Footer";
 import { useNavigate } from "react-router";
 import { useParams } from "react-router";
@@ -140,7 +140,7 @@ function Article() {
             </div>
           </div>
           <Footer />
-          <ChatButton />
+           
         </>
       ) : (
         <Loading />

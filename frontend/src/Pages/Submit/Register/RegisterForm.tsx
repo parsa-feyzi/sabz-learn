@@ -173,7 +173,7 @@ function RegisterForm({ isAdminRegister }: { isAdminRegister?: boolean }) {
       )}
       {(warningAlertIsShow as T_AlertIsShow).isShow && (
         <Alert
-          message={"این شماره مسدود شده و صلاحیت ثبت نام در سبزلرن را ندارد!"}
+          message={"این شماره مسدود شده و صلاحیت ثبت نام در بــی‌لـرن را ندارد!"}
           alertThem="bg-warn"
         />
       )}

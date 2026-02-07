@@ -1,6 +1,6 @@
 import type { JSX } from "react/jsx-runtime";
 import { Swiper } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 function SwiperBox({
   children,
@@ -40,7 +40,8 @@ function SwiperBox({
         },
       }}
       loop={true}
-      modules={[Autoplay, Pagination]}
+      navigation={true}
+      modules={[Navigation, Autoplay, Pagination]}
       className="mySwiper"
     >
       {children}

@@ -54,7 +54,7 @@ function HomePA() {
       ).json();
       setSiteStatusInfos(infos.infos);
       setLatestUsers(infos.lastUsers);
-    } catch (error) {}
+    } catch (error) { }
   };
 
   const getAllCourses = async () => {
@@ -127,12 +127,7 @@ function HomePA() {
         )}
       </div>
       <DataCotainerBox title="مقایسه درآمد ماهانه">
-        <div
-          onLoad={() => {
-            console.log("im loaded!");
-          }}
-          className="rounded-lg md:h-[18vw] h-[30vw]"
-        >
+        <div className="rounded-lg md:h-[18vw] h-[30vw]">
           <AnalisChart data={data} />
         </div>
       </DataCotainerBox>
@@ -205,11 +200,10 @@ function HomePA() {
               {latestUsers?.length !== 0 ? (
                 latestUsers?.map((user, index) => (
                   <div
-                    className={`${
-                      index % 2
+                    className={`${index % 2
                         ? ""
                         : "rounded-lg bg-neut-seco-panel dark:bg-d-neut-seco-panel"
-                    } flex items-center sm:grid sm:grid-cols-12 me-2 py-4 rounded-md *:shrink-0`}
+                      } flex items-center sm:grid sm:grid-cols-12 me-2 py-4 rounded-md *:shrink-0`}
                   >
                     <div className="w-16 sm:w-auto md:text-base text-sm sm:col-span-1 text-center">
                       <span className="font-[irsans] font-bold opacity-50 text-label xs:text-caption">

@@ -412,3 +412,20 @@ a {
 .doot {
   @apply before:size-1.5 before:mx-2 before:bg-neutral-800 dark:before:bg-neutral-400 before:rounded-full before:inline-block
 }
+
+/* swiper buttons */
+.swiper {
+  @apply !relative !px-10
+}
+
+.swiper-button-prev, .swiper-button-next {
+  @apply !absolute top-1/2 !text-white -translate-y-1/2 z-10 active:scale-95 bg-prim/40 md:hover:bg-prim/80 hover:bg-prim/60 size-16 cursor-pointer rounded-full grid place-content-center
+}
+
+.swiper-button-prev {
+  @apply rotate-180 !-right-7
+}
+
+.swiper-button-next {
+  @apply !-left-7
+}

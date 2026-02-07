@@ -1,4 +1,4 @@
-import ChatButton from "../../Components/DesignSystem/ChatButton";
+  
 import Footer from "../../Components/Footer/Footer";
 import Topbar from "../../Components/Topbar/Topbar";
 import Aboutus from "./components/Aboutus/Aboutus";
@@ -29,7 +29,7 @@ function Home() {
         </div>
       </div>
       <Footer />
-      <ChatButton />
+      {/*   */}
     </>
   );
 }

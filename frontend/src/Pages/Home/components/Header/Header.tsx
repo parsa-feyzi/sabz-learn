@@ -42,20 +42,20 @@ function Header() {
         <div className="flex flex-col md:pt-12 pt-8 items-center lg:px-[8vw] px-[5vw] max-w-[1500px] mx-auto">
           <div className="md:pb-14 pb-8">
             <div className="md:text-4xl sm:text-2xl text-xl text-center md:pb-8 pb-4 font-[dana-xb]">
-              سبزلرن، اولین گام برنامه‌نویس شدن
+              بــی‌لـرن، اولین گام برنامه‌نویس شدن
             </div>
             <div className="md:text-lg text-sm text-center">
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
                     .typeString(
-                      "با آکادمی خصوصی سبزلرن، علم برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت کن"
+                      "با آکادمی خصوصی بــی‌لـرن، علم برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت کن"
                     )
                     .start()
                     .pauseFor(5000)
                     .deleteAll()
                     .typeString(
-                      "با آکادمی خصوصی سبزلرن، علم برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت کن"
+                      "با آکادمی خصوصی بــی‌لـرن، علم برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت کن"
                     )
                     .pauseFor(5000)
                     .deleteAll();

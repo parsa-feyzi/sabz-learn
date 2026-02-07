@@ -22,8 +22,8 @@ const AnalisChart = ({ data }: {data: { name: string; income: number }[]}) => {
           className="chart_line"
           type="monotone"
           dataKey="income"
-          stroke="#00b663"
-          fill="#00b6631a"
+          stroke="#008de5"
+          fill="#008de51a"
           strokeWidth={2}
         />
         <XAxis dataKey="name" />

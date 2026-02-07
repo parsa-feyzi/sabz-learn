@@ -52,7 +52,7 @@ exports.asnwer = async (req, res, next) => {
     var mailOptions = {
       from: "sabzlearnir@gmail.com",
       to: email,
-      subject: "پاسخ پیغام شما از سمت آکادمی سبزلرن",
+      subject: "پاسخ پیغام شما از سمت آکادمی بــی‌لـرن",
       text: answer,
     };
 

@@ -271,7 +271,7 @@ function DiscountCodePA() {
               <div className="sm:text-sm text-[13px] text-neutral-700 dark:text-neutral-300 sm:doot">
                 این تخفیف تمامی دوره های{" "}
                 <Link className="text-prim font-[dana-b]" to={"/"}>
-                  سبزلرن
+                  بــی‌لـرن
                 </Link>{" "}
                 رو شامل میشه!
               </div>

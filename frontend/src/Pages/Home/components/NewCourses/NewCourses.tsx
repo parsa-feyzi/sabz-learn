@@ -25,7 +25,7 @@ const NewCourses = memo(() => {
   }, []);
 
   return (
-    <div className="pt-24 sm:pt-40">
+    <div className="relative pt-24 sm:pt-40">
         <HeaderSection subject="جدیدتریــن ها" title="دوره‌های جدید، فرصت‌های نو">
             <div></div>
         </HeaderSection>

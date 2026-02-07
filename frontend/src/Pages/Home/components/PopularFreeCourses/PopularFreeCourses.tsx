@@ -26,7 +26,7 @@ function PopularFreeCourses() {
     <div className="pt-24 sm:pt-40">
       <HeaderSection
         subject="محبوب ترین دوره ها"
-        title="پرمخاطب ترین دوره های رایگان سبزلرن"
+        title="پرمخاطب ترین دوره های رایگان بــی‌لـرن"
       >
         <HeaderSectionLink label="همه دوره ها" link="/category-courses/courses" />
       </HeaderSection>

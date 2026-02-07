@@ -43,7 +43,7 @@ function SubmitTemplate({ children, title, question, link, linkTitle, isContactF
             to={"/"}
             className="text-prim hover:underline hover:decoration-prim"
           >
-            سبزلرن
+            بــی‌لـرن
           </Link>
           {" "}را پذیرفته اید.
         </div>}

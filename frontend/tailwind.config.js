@@ -15,10 +15,10 @@ export default {
         'd-neut-prim': '#1f2a38',
         'd-neut-seco': '#0e1827',
         'd-neut-ther': '#303c4c',
-        // static colors
-        'prim': '#00b663',
-        'notf': '#008de5',
-        'notf-seco': '#0369a1',
+        // static colors | prim=#00b663
+        'prim': '#008de5',
+        'notf': '#f59e0b',
+        'notf-seco': '#f59e0b',
         'error': '#dc2626',
         'warn': '#f59e0b',
       // panel modes -------------------------

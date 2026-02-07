@@ -14,7 +14,7 @@ import PersonOutlineRoundedIcon from "@mui/icons-material/PersonOutlineRounded";
 import Breadcrumb from "../../Components/Breadcrumb/Breadcrumb";
 import HomeOutlined from "@mui/icons-material/HomeOutlined";
 import Button from "../../Components/DesignSystem/Button";
-import ChatButton from "../../Components/DesignSystem/ChatButton";
+  
 import Footer from "../../Components/Footer/Footer";
 import Topbar from "../../Components/Topbar/Topbar";
 import DetailsBoxes from "./components/DetailsBoxes/DetailsBoxes";
@@ -311,7 +311,6 @@ function Course() {
             </div>
           </div>
           <Footer />
-          <ChatButton />
         </>
       ) : (
         <Loading />

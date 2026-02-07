@@ -24,10 +24,10 @@ const PopularCourses = memo(() => {
   }, []);
 
   return (
-    <div className="pt-24 sm:pt-40">
+    <div className="relative pt-24 sm:pt-40">
       <HeaderSection
         subject="پرطرفدار ترین دوره ها"
-        title="دوره های محبوب و پروژه محور سبزلرن"
+        title="دوره های محبوب و پروژه محور بــی‌لـرن"
       />
       <div className="rounded-lg overflow-hidden">
         <SwiperBox>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Breadcrumb from "../../Components/Breadcrumb/Breadcrumb";
-import ChatButton from "../../Components/DesignSystem/ChatButton";
+  
 import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
 import Topbar from "../../Components/Topbar/Topbar";
@@ -418,7 +418,7 @@ function Session() {
             </div>
           </div>
           <Footer />
-          <ChatButton />
+           
         </>
       ) : (
         <Loading />
